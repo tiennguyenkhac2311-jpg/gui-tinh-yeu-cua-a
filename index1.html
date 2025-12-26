@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Dành cho em 💕</title>
+<style>
+    body {
+        margin: 0;
+        background: #e5e5e5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", sans-serif;
+    }
+
+    .iphone {
+        width: 375px;
+        height: 812px;
+        background: #000;
+        border-radius: 45px;
+        padding: 12px;
+        box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+    }
+
+    .screen {
+        background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+        width: 100%;
+        height: 100%;
+        border-radius: 35px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .notch {
+        width: 210px;
+        height: 30px;
+        background: #000;
+        border-radius: 0 0 20px 20px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+    }
+
+    .status-bar {
+        height: 40px;
+        padding: 10px 20px 0;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    .app {
+        background: white;
+        margin: 20px;
+        margin-top: 10px;
+        border-radius: 25px;
+        padding: 30px 20px;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    h1 {
+        font-size: 22px;
+        color: #ff5e78;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #4a2c2a;
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 14px 24px;
+        font-size: 16px;
+        border: none;
+        border-radius: 30px;
+        background: #ff5e78;
+        color: white;
+        cursor: pointer;
+    }
+
+    button:active {
+        transform: scale(0.95);
+        background: #ff3f5f;
+    }
+
+    .love {
+        display: none;
+        margin-top: 20px;
+        font-size: 16px;
+        color: #d6336c;
+    }
+
+    .home-bar {
+        width: 140px;
+        height: 5px;
+        background: #ccc;
+        border-radius: 3px;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+</style>
+</head>
+<body>
+
+<div class="iphone">
+    <div class="screen">
+        <div class="notch"></div>
+
+        <div class="status-bar">
+            <div>9:41</div>
+            <div>📶 🔋</div>
+        </div>
+
+        <div class="app">
+            <h1>Gửi người anh/em yêu 💗</h1>
+
+            <p>
+                Anh/em biết có lúc mình vô tâm,<br>
+                làm em buồn mà không nhận ra.
+            </p>
+
+            <p>
+                Nhưng em luôn là người rất quan trọng,<br>
+                và anh/em thật lòng trân trọng em.
+            </p>
+
+            <button onclick="showLove()">Làm hòa nha 🥺</button>
+
+            <div class="love" id="loveText">
+                Cảm ơn em vì đã ở đây 💕<br>
+                Mình cùng cười lại nhé 💖
+            </div>
+        </div>
+
+        <div class="home-bar"></div>
+    </div>
+</div>
+
+<script>
+    function showLove() {
+        document.getElementById("loveText").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
